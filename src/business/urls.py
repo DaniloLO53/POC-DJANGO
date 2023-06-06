@@ -4,6 +4,7 @@ from . import views
 
 app_name = "business"
 urlpatterns = [
-    path("", views.index, name="index"),
-    path("<int:user_id>/", views.detail, name="detail"),
+    path("sign-up/", views.signup, name="sign-up"),
+    path("sign-in/", views.signin, name="sign-in"),
+    path("index/", views.index, name="index"),
 ]
